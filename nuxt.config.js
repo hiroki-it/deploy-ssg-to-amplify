@@ -1,3 +1,5 @@
+const BUILD_DEVICE_TYPE = process.env.BUILD_DEVICE_TYPE
+
 export default {
 
   target: 'static',
@@ -16,6 +18,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+
+  generate: {
+    dir: `dist/${BUILD_DEVICE_TYPE}/`
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
