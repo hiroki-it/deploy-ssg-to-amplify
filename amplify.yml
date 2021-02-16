@@ -7,11 +7,11 @@ frontend:
         - npm install
     build:
       commands:
-        - npm run generate-${UA_ENV}
-        - mv ./dist/${UA_ENV} ./dist/base
+        - npm run generate-pc
+        - npm run generate-sp
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: ./dist/base
+    baseDirectory: ./dist
     files:
       - '**/*'
   cache:
