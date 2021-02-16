@@ -7,7 +7,7 @@ frontend:
         - npm install
     build:
       commands:
-        - npm run generate-${UA_ENV} ./dist/${UA_ENV}
+        - npm run generate-${UA_ENV}
         - mv ./dist/${UA_ENV} ./dist/base
   artifacts:
     # IMPORTANT - Please verify your build output directory
