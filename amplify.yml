@@ -9,10 +9,10 @@ frontend:
       commands:
         - npm run generate ./dist/${UA_ENV}
         - mkdir -p ./base
-        - cp -Rp ./dist/${UA_ENV}/dist ./base
+        - mv ./dist/${UA_ENV}/dist .
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: ./base
+    baseDirectory: ./dist
     files:
       - '**/*'
   cache:
