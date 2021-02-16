@@ -9,7 +9,7 @@ frontend:
       commands:
         - npm run generate ./dist/${UA_ENV}
         - mkdir -p ./base
-        - copy -Rp ./dist/${UA_ENV} ./base
+        - cp -Rp ./dist/${UA_ENV} ./base
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: ./base
