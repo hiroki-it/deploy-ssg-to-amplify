@@ -7,8 +7,7 @@ frontend:
         - npm install
     build:
       commands:
-        - set -x
-        - source amplify.sh
+        - source amplify_build.sh
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: ./dist
