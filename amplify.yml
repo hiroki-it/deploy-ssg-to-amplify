@@ -3,17 +3,15 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "APP_ENV=$APP_ENV" >> .env
-        - npm install
+        - set -x
+        - source ./ops/amplify_prebuild.sh
     build:
       commands:
-        - npm run generate-pc
-        - npm run generate-sp
+        - source ./ops/amplify_build.sh
   artifacts:
-    # IMPORTANT - Please verify your build output directory
     baseDirectory: ./dist
     files:
-      - '**/*'
+      - **/*
   cache:
     paths:
       - node_modules/**/*

@@ -6,8 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate-pc": "BUILD_DEVICE_TYPE=PC nuxt generate",
-    "generate-sp": "BUILD_DEVICE_TYPE=SP nuxt generate"
+    "generate-pc": "BUILD_DEVICE_TYPE=pc nuxt generate",
+    "generate-sp": "BUILD_DEVICE_TYPE=sp nuxt generate"
   },
   "dependencies": {
     "core-js": "^3.6.5",
