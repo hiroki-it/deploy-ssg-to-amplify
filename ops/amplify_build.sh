@@ -3,7 +3,7 @@
 set -xeuo pipefail
 set -u
 
-case BUILD_DEVICE_TYPE in
+case $BUILD_DEVICE_TYPE in
     "pc")
         npm run generate-pc
     ;;
