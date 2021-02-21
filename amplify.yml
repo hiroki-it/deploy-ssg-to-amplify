@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "APP_ENV=$APP_ENV" >> .env
+        - echo "DEVICE_ENV=$DEVICE_ENV" >> .env
         - npm install
     build:
       commands:
