@@ -4,8 +4,7 @@ frontend:
     preBuild:
       commands:
         - set -x
-        - echo "DEVICE_TYPE=$DEVICE_TYPE" >> .env
-        - npm install
+        - source amplify_prebuild.sh
     build:
       commands:
         - source amplify_build.sh
