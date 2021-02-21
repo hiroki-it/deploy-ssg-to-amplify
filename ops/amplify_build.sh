@@ -15,3 +15,6 @@ case $BUILD_DEVICE_TYPE in
         exit 1
     ;;
 esac
+
+ls -la
+mv ./dist/$BUILD_DEVICE_TYPE ./dist/artifacts

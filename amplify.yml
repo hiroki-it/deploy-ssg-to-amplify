@@ -9,7 +9,7 @@ frontend:
       commands:
         - source ./ops/amplify_build.sh
   artifacts:
-    baseDirectory: ./dist
+    baseDirectory: ./dist/artifacts
     files:
       - "**/*"
   cache:
