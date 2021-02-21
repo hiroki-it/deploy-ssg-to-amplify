@@ -4,10 +4,10 @@ frontend:
     preBuild:
       commands:
         - set -x
-        - source amplify_prebuild.sh
+        - source ./ops/amplify_prebuild.sh
     build:
       commands:
-        - source amplify_build.sh
+        - source ./ops/amplify_build.sh
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: ./dist
