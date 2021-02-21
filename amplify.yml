@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - set -x
         - echo "DEVICE_TYPE=$DEVICE_TYPE" >> .env
         - npm install
     build:
