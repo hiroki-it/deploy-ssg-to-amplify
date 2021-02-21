@@ -7,8 +7,8 @@ frontend:
         - npm install
     build:
       commands:
-        - if [ "${DEVICE_ENV}" = "PC" ]; then npm run generate-pc; fi
-        - if [ "${DEVICE_ENV}" = "SP" ]; then npm run generate-sp; fi
+        - set -x
+        - source amplify.sh
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: ./dist
