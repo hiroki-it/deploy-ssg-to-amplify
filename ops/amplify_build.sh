@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -xeuo pipeline
+set -xeuo pipefail
 set -u
 
 case $DEVICE_TYPE in

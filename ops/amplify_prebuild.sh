@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -xeuo pipeline
+set -xeuo pipefail
 set -u
 
 echo "DEVICE_TYPE=$DEVICE_TYPE" > .env
