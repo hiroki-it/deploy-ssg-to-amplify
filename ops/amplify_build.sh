@@ -11,7 +11,7 @@ case $DEVICE_TYPE in
         npm run generate-sp
     ;;
     *)
-        echo "The parameter ${$DEVICE_TYPE} is invalid."
+        echo "The parameter ${DEVICE_TYPE} is invalid."
         exit 1
     ;;
 esac
