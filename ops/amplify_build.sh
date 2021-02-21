@@ -16,5 +16,5 @@ case $BUILD_DEVICE_TYPE in
     ;;
 esac
 
-ls -la
+ls -la ./dist/$BUILD_DEVICE_TYPE
 mv ./dist/$BUILD_DEVICE_TYPE ./dist/artifacts
