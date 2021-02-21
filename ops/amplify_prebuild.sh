@@ -3,6 +3,6 @@
 set -xeuo pipefail
 set -u
 
-echo "DEVICE_TYPE=$DEVICE_TYPE" > .env
+echo "APP_STG_ENV=$APP_STG_ENV" > .env
 cat .env
 npm install
