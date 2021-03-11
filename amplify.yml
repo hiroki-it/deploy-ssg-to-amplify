@@ -3,11 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - set -x
-        - source ./ops/amplify_prebuild.sh
+        - set -xeuo pipefail
+        - source ./amplify_ops/prebuild.sh
     build:
       commands:
-        - source ./ops/amplify_build.sh
+        - source ./amplify_ops/build.sh
   artifacts:
     baseDirectory: ./dist/artifacts
     files:
