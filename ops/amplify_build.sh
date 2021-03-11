@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -xeuo pipefail
-set -u
 
 case $BUILD_DEVICE_TYPE in
     "pc")
