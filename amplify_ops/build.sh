@@ -1,8 +1,9 @@
 #!/bin/bash
 
-set -xeuo pipefail
-
-case $BUILD_DEVICE_TYPE in
+###########################################################
+# Amplifyのアプリに応じて，ビルドし分けます．
+###########################################################
+case $AMPLIFY_APP_DEVICE_TYPE in
     "pc")
         npm run generate-pc
     ;;
