@@ -5,10 +5,10 @@
 ###########################################################
 case $AMPLIFY_APP_DEVICE_TYPE in
     "pc")
-        npm run generate-pc
+        yarn generate-pc --fail-on-error
     ;;
     "sp")
-        npm run generate-sp
+        yarn generate-sp --fail-on-error
     ;;
     *)
         echo "The parameter ${AMPLIFY_APP_DEVICE_TYPE} is invalid."
