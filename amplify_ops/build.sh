@@ -10,7 +10,7 @@ case $BUILD_DEVICE_TYPE in
         npm run generate-sp
     ;;
     *)
-        echo "The parameter ${BUILD_DEVICE_TYPE} is invalid."
+        echo "The parameter ${AMPLIFY_APP_DEVICE_TYPE} is invalid."
         exit 1
     ;;
 esac
