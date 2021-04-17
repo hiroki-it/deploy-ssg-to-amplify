@@ -8,6 +8,8 @@ frontend:
     build:
       commands:
         - source ./amplify_ops/build.sh
+        - ls -la ./dist/$AMPLIFY_APP_DEVICE_TYPE
+        - mv ./dist/$AMPLIFY_APP_DEVICE_TYPE ./dist/artifacts
   artifacts:
     baseDirectory: ./dist/artifacts
     files:
