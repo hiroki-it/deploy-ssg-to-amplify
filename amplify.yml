@@ -4,9 +4,11 @@ frontend:
     preBuild:
       commands:
         - set -xeuo pipefail
+        - ls -la
         - source ./amplify_ops/prebuild.sh
     build:
       commands:
+        - ls -la
         - source ./amplify_ops/build.sh
         - ls -la ./dist/$AMPLIFY_APP_DEVICE_TYPE
         - mv ./dist/$AMPLIFY_APP_DEVICE_TYPE ./dist/artifacts
