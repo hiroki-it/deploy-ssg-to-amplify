@@ -10,7 +10,9 @@ Amplifyを用いて，Nuxt.jsのSSGアプリのCI/CDを構築しました．
 
 Amplifyの静的サイトホスティング機能はS3とCloudFrontから構成されています．
 
-その他の機能については，[Black Belt](https://d1.awsstatic.com/webinars/jp/pdf/services/20200520_AWSBlackBelt_Amplify_A.pdf) を参考に．
+その他の機能については，Black Beltの資料を参考に．
+
+参考：https://d1.awsstatic.com/webinars/jp/pdf/services/20200520_AWSBlackBelt_Amplify_A.pdf
 
 AmplifyのCI/CDは，プロジェクトルートに配置された [amplify.yml](https://github.com/hiroki-it/deploy-ssg-to-amplify/blob/develop/amplify.yml) ファイルで定義します．
 
